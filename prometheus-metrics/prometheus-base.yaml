@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: prometheus
+  namespace: cluster-config
+spec:
+  prometheusSpec:
+    remoteWrite:
+    - url: "https://test-remote-write-url.com"
+      azureAd:
+        cloud: 'AzurePublic'
+        managedIdentity:
+          clientId: "test-managed-identity-client-id"
+        oauth:
+          clientId: "test-oauth-client-id"
+          clientSecret:
+            name: remote-write-secret
+            key: password
+          tenantId: "test-tenant-id"
