@@ -1,9 +1,4 @@
-apiVersion: monitoring.coreos.com/v1
-kind: Prometheus
-metadata:
-  name: prometheus
-  namespace: cluster-config
-spec:
+prometheus:
   prometheusSpec:
     remoteWrite:
     - url: "https://test-remote-write-url.com"
