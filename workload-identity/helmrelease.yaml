@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: my-chart
-      version: '0.3.0'
+      version: latest
       sourceRef:
         kind: HelmRepository
         name: acrrepo
