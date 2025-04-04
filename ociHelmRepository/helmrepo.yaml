@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: acrrepo
-  namespace: ociHelm
+  namespace: ocihelm
 spec:
   interval: 1m0s
   type: oci

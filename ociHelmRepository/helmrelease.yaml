@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: my-chart
-  namespace: ociHelm
+  namespace: ocihelm
 spec:
   interval: 10m
   timeout: 5m
