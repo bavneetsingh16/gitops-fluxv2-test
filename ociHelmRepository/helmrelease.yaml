@@ -4,8 +4,8 @@ metadata:
   name: my-chart
   namespace: ocihelm
 spec:
-  interval: 10m
-  timeout: 5m
+  interval: 1m
+  timeout: 1m
   chart:
     spec:
       chart: my-chart
